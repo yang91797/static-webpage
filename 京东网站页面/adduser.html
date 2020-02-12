@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>个人注册</title>
+    <link rel="icon" href="images/favicon.ico">
+    <link rel="stylesheet" href="adduser.css">
+    <script src="jquery-3.3.1.js"></script>
+</head>
+<body>
+    <div id="form-header" class="header">
+        <div class="logo-con w clearfix">
+            <a class="logo" href="jd.html"></a>
+            <div class="logo-title">欢迎注册</div>
+            <div class="have-account">
+                已有账号?
+                <a href="#">请登录</a>
+            </div>
+        </div>
+    </div>
+    <div class="container w">
+        <div id="form-main" class="main clearfix">
+            <div class="reg-form f1">
+                <form id="register-form" method="POST">
+                    <div id="form-item-account" class="form-item form-item-account">
+                        <label for="form-account">用 户 名</label>
+                        <input id="form-account" class="field" name="regName" autocomplete="off" type="text" mark="用户名" placeholder="您的账户名和登录名">
+
+                    </div>
+                    <div class="input-tip">
+                        <span></span>
+                    </div>
+                    <div class="form-item" style="z-index: 12;">
+                        <label for="form-pwd">设 置 密 码</label>
+                        <input type="password" id="form-pwd" class="field" name="pwd" mark="密码" placeholder="建议至少使用两种字符组合">
+                        <div class="capslock-tip tips" style="display: none;">
+                            大写已开启
+                            <b class="arrow"></b>
+                            <b class="arrow-inner"></b>
+                        </div>
+
+                    </div>
+                    <div class="input-tip">
+                        <span></span>
+                    </div>
+                    <div class="form-item" STYLE="z-index: 12;">
+                        <label for="form-equalTopwd">确 认 密 码</label>
+                        <input type="password" id="form-equalTopwd" class="field" mark="密码" placeholder="请再次输入密码">
+                        <div class="capslock-tip tips" style="display: none;">
+                            大写已开启
+                            <b class="arrow"></b>
+                            <b class="arrow-inner"></b>
+                        </div>
+                    </div>
+                    <div class="input-tip">
+                        <span></span>
+                    </div>
+                    <div class="item-phone-wrap">
+                        <div class="form-item form-item-phone">
+                            <label id="select-country" class="select-country" for="form-phone">
+                                手机号码
+                            </label>
+                            <input type="text" id="form-phone" name="phone" class="field" mark="号码" placeholder="建议使用常用手机">
+                        </div>
+                    </div>
+                    <div class="input-tip">
+                        <span></span>
+                    </div>
+                    <div >
+                        <button class="btn-register" type="submit">立即注册</button>
+
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="adduser.js"></script>
+</html>
